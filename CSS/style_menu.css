@@ -1,0 +1,61 @@
+.h1 {
+  text-align: center;
+  font-size: 50px;
+  color:rgb(63, 0, 122);
+  margin: auto;
+    
+}
+
+.bemvindo {
+  display: flex;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-top: 75px;
+}
+
+.body_home {
+    background-color: rgb(238, 182, 255) 
+}
+
+button {
+    z-index: 1;
+    position: relative;
+    font-size: inherit;
+    font-family: inherit;
+    color: white;
+    padding: 20px;
+    outline: none;
+    border: none;
+    background-color: hsl(283, 100%, 28%);
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-left: 12rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  
+  button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    right: 100%;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: #ff6ef3;
+    transform-origin: center;
+    transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
+    transition: transform 0.45s ease-in-out;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    color: #161616;
+  }
+  
+  button:hover::before {
+    transform: translate3d(50%, -50%, 0) scale3d(15, 15, 15);
+  }
